@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+  text-align: center;
+  margin:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header{
+    padding: 1.25rem 0;
+    background: #000;
+}
+.header h1{
+    color: #fff;
+    font-size: 3.12em;
+    font-weight: 500;
+}
+.hero-section img{
+    width: 100%;
+    vertical-align: top;
+}
+.hero-section{
+    margin: 0;
+    padding: 0;
+}
+.centrado{
+    width: 80%;
+    margin: 0 auto;
+}
+.desc-section{
+    text-align: left;
+    background: #000;
+    color: #fff;
+    padding: 5.125rem;
+}
+
+.iguana-info, .iguana-img, .galeria, .icons{
+    display: inline-block;
+    vertical-align: middle;
+}
+.icons-section{
+  margin: 0 auto;
+  padding: 80px;
+  background: #1e1a13;
+}
+.icons-section h2{
+  color: #fff;
+  font-size: 2.18em;
+  padding-bottom: 40px;
+  font-weight: 300;
+}
+.icons-section h3{
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 300;
+}
+.icons-section .icons{
+  width: 23%;
+}
+.icons i{
+  font-size: 3.5em;
+  color: #fff;
+  padding: 20px;
+}
+.icons-section h2{
+  color: #fff;
+}
+
+.galeria{
+  background: #000;
+  width: 100%;
+}
+.galeria-iguana1, .galeria-iguana2, .galeria-iguana3{
+  width: 316px;
+  height: 202px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 73px 8px;
+}
+.galeria-iguana1{
+  background: url(../img/iguana-2.jpg)center;
+  background-size: cover;
+
+}
+.galeria-iguana2{
+  background: url(../img/iguana-3.jpg)center;
+  background-size: cover;
+}
+.galeria-iguana3{
+  background: url(../img/iguana-4.jpg)center;
+  background-size: cover;
+}
+.iguana-info{
+    width: 44%;
+    margin-right: 9%;
+    white-space: pre-line;
+}
+.iguana-img{
+    width: 46%;
+}
+.iguana-info p{
+    font-weight: 300;
+}
+footer{
+    padding: 3.125rem;
+    color: #fff;
+    background: #1E1A13;
+    font-weight: 300;
+}

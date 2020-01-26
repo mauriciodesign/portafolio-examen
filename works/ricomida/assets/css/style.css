@@ -1,0 +1,201 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  color: #373A3C;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 37px;
+  margin: 0;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.logo{
+  background: #373A3C;
+}
+
+hr {
+  border-color: #000;
+}
+header {
+  margin-top: 110px;
+}
+
+header .card {
+  border: none;
+  text-align: center;
+}
+
+header .card-body{
+  padding: 0;
+}
+
+header .card-body a{
+  color: #373A3C;
+  font-weight: 400;
+  padding: 6px 8px;
+} 
+.btn {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.tooltip-inner {
+  max-width: 100%;
+  background: #373A3C;
+}
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #373A3C;
+}
+.bs-tooltip-right .arrow::before {
+  border-right-color: #373A3C;
+}
+.tooltip {
+  margin: 10px;
+}
+.carousel-item img{
+  max-width: 100%;
+}
+.carousel-indicators {
+  bottom: -54px;
+}
+.carousel-indicators li {
+  background: #373A3C31;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  border: 0;
+}
+.carousel-indicators .active {
+  background: #373A3C;
+}
+.ingredientes{
+  margin-bottom: 40px;
+}
+
+.ingredientes ul{  
+  padding: 0;
+}
+.ingredientes ul li{
+  list-style: none;
+}
+
+.ingredientes h4, .ingredientes p, .card-section h5, header .card-text{
+  font-weight: 700;
+}
+
+.ingredientes h4{
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  line-height: 40px;
+}
+.card-section h5{
+  font-size: 23px;
+}
+
+.newsletter{
+  background: #DC3545;
+  padding: 90px 0;
+}
+.newsletter a{
+  padding: 10px 90px;
+  margin: 40px 0;
+  font-size: 16px;
+}
+
+.newsletter span{
+  font-family: 'Lobster', cursive;
+}
+
+.newsletter p{
+  font-size: 20px;
+}
+.newsletter a{
+  color: #fff;
+}
+.carousel-section, .separador{
+  display: none;
+}
+header p, .ingredientes h4, .ingredientes li{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+@media (min-width: 450px) {
+  .btn {
+    font-size: 16px;
+    margin: 3%;
+  }
+}
+@media (min-width: 576px) {
+  header p, .ingredientes p, .ingredientes h4, .ingredientes li{
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  header .card-body a{
+    padding: auto;
+  }
+}
+@media (min-width: 768px) {
+  header .card{
+    text-align: left;
+  }
+  .img-principal img{
+    display: none;
+  }
+  .img-principal{
+    background: url("../img/principal.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+  }
+  .carousel-section, .separador{
+    display: block;
+  }
+  .card-section .card-body{
+    height: 253px;
+  }
+  .btn {
+    margin: 0 8px 0 0;
+  }
+  header .card-body{
+    padding: 1.25rem;
+  }
+  .ingredientes {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+  header .card img{
+    height: 417px;
+  }
+  .btn-left{
+    margin-right: 30px;
+  }
+  .card-section .card-body{
+    height: 200px;
+  }
+  .btn {
+    margin: 0 25px 0 0;
+  }
+  .newsletter{
+    padding: 150px 0;
+  }
+}
+@media (min-width: 1199px) {
+  .card-section .card-body{
+    height: 177px;
+  }
+}
