@@ -1,11 +1,35 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #373A3C;
-  position: relative;
+  font-family: 'Lato', sans-serif;
+  color: #707070;
+}
+h1{
+  /* font-size: 45px; */
+  font-weight: 300;
+}
+h2, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.img-container1,
-.img-container2 {
+h3 {
+  font-size: 35px;
+  color: #233237;
+}
+
+h3, h2, h5, h4{
+  font-weight: 800;
+}
+
+hr {
+  border: 2px solid #233237;
+  width: 100px;
+  margin-top: 25px;
+  background: #233237;
+}
+header hr{
+  width: 235px;
+}
+
+.img-container1, .img-container2, .img-container3 {
   width: 100%;
   height: 550px;
   background-size: cover;
@@ -19,13 +43,27 @@ body {
   background: url("../img/herosection2.jpg") no-repeat center;
 }
 
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #fff;
+.img-container3 {
+  background: url("../img/herosection3.jpg") no-repeat center;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: rgb(255, 255, 255, .7);
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus  {
+  color: rgb(255, 255, 255);
 }
 
 .navbar-brand img {
   width: 35px;
+}
+.navbar {
+  transition: all 0.4s;
+  background: rgba(35, 50, 55,.6);
+}
+
+.navbar.active {
+  background: rgb(35, 50, 55);
 }
 
 .title-header {
@@ -48,71 +86,32 @@ body {
   border: 10px solid rgba(255, 255, 255, 0.3);
 }
 
-.carousel-control-next,
-.carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
   z-index: 2;
 }
 
-.title-header h1,
-.title-header h2 {
-  font-size: 45px;
-  font-weight: 300;
-}
-
-.title-header h2 {
-  font-weight: 900;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+.carousel-control-next-icon, .carousel-control-prev-icon {
   width: 30px;
   height: 30px;
 }
 
-hr {
-  border: 2px solid #35495e;
-  width: 100px;
-  margin-top: 25px;
-  background: #35495e;
-}
-
-h2 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
-  font-size: 35px;
-  font-weight: bold;
-  color: #233237;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h5{
-  font-weight: 700;
-}
-
 .intro-section p {
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 45px;
 }
 
 .info-section p {
   font-size: 16px;
   line-height: 45px;
-  font-weight: 300;
-}
-
-.color-background {
-  background: #233237;
-}
-
-.color-background2 {
-  background: #984b43;
+  font-weight: 400;
 }
 
 .navbar button {
   border-color: #FFFFFF80 !important;
+}
+#sobre_mi {
+  display: none;
 }
 
 .card {
@@ -124,8 +123,8 @@ h5{
   text-decoration: none;
 }
 
-#trabajos p {
-  font-weight: 400;
+#trabajos {
+  background: #984b43;
 }
 
 .card-flex {
@@ -135,12 +134,8 @@ h5{
   font-size: 30px;
 }
 
-.card-flex h4 {
-  font-weight: 700;
-}
-
 .card-flex p {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 25px;
 }
 
@@ -150,33 +145,30 @@ h5{
 
 .icons-section i {
   font-size: 50px;
-  margin: 15px;
+  margin: 40px 15px;
   color: #fff;
 }
 
 footer {
   padding: 58px;
   margin-top: 70px;
+  background: #233237;
 }
 
 footer h2 {
   font-size: 39px;
-  font-weight: 700;
   margin: 0;
 }
 
-#sobre_mi {
-  display: none;
+.title-header h1, .title-header h2 {
+  font-size: 45px;
 }
 
-
 @media (min-width: 576px) {
-
-  .title-header h1,
-  .title-header h2 {
-    font-size: 52px;
+  .title-header h1, .title-header h2 {
+    font-size: 54px;
   }
-
+  
   h3 {
     font-size: 52px;
   }
@@ -187,6 +179,9 @@ footer h2 {
 
   .card-flex p {
     font-size: 30px;
+  }
+  header hr{
+    width: 280px;
   }
 }
 
@@ -199,8 +194,7 @@ footer h2 {
     flex-direction: row;
   }
 
-  .img-container1,
-  .img-container2 {
+  .img-container1, .img-container2, .img-container3 {
     height: 600px;
     background-size: cover;
   }
@@ -217,12 +211,14 @@ footer h2 {
   #trabajos .card {
     height: 410px;
   }
+  .icons-section i {
+    margin: 15px 15px;
+  }
 }
 
 @media (min-width: 992px) {
 
-  .img-container1,
-  .img-container2 {
+  .img-container1, .img-container2, .img-container3 {
     height: 700px;
     background-size: cover;
   }
@@ -231,13 +227,15 @@ footer h2 {
     margin-top: 100px;
   }
 
-  .title-header h1,
-  .title-header h2 {
+  .title-header h1, .title-header h2 {
     font-size: 62px;
   }
 
   .perfil img {
     width: 260px;
+  }
+  header hr {
+    width: 325px;
   }
 }
 
@@ -245,26 +243,30 @@ footer h2 {
   #trabajos .card {
     height: 420px;
   }
+  header hr{
+    width: 330px;
+  }
 }
 
 @media (min-width: 1500px) {
 
-  .img-container1,
-  .img-container2 {
+  .img-container1, .img-container2, .img-container3{
     height: 850px;
     background-size: cover;
   }
 
   .title-header {
-    margin-top: 200px;
+    margin-top: 185px;
   }
 
-  .title-header h1,
-  .title-header h2 {
+  .title-header h1, .title-header h2 {
     font-size: 70px;
   }
 
   .perfil img {
     width: 300px;
+  }
+  header hr {
+    width: 370px;
   }
 }
